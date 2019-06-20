@@ -1,1 +1,10 @@
+#importing pandas to read csv
+import pandas as pd
+import pandas_profiling
 
+df = pd.read_csv("Assignment.csv")
+#printing out our dataset
+df.sample(5)
+
+#Profiling 
+pandas_profiling.ProfileReport(df)
